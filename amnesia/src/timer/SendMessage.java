@@ -31,7 +31,7 @@ class SendMessage extends TimerTask {
 					Message message = Message.creator(
 							new PhoneNumber(number),
 							new PhoneNumber("+13232104804"),
-							"TIME TO WAKE UP MAN.").create();
+							"This message is just to make you remember that your name is " + name).create();
 					System.out.println(message.getStatus());
 					break;
 				} catch (Exception e) {
